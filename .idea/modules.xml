@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hydra-transfer-job-executor.iml" filepath="$PROJECT_DIR$/hydra-transfer-job-executor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hydra-transfer-job-executor-client/hydra-transfer-job-executor-client.iml" filepath="$PROJECT_DIR$/hydra-transfer-job-executor-client/hydra-transfer-job-executor-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hydra-transfer-job-executor-common/hydra-transfer-job-executor-common.iml" filepath="$PROJECT_DIR$/hydra-transfer-job-executor-common/hydra-transfer-job-executor-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hydra-transfer-job-executor-server/hydra-transfer-job-executor-server.iml" filepath="$PROJECT_DIR$/hydra-transfer-job-executor-server/hydra-transfer-job-executor-server.iml" />
+    </modules>
+  </component>
+</project>

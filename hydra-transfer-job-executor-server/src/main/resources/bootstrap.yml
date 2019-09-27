@@ -1,0 +1,39 @@
+###################### server info #####################
+server:
+  port: 8769
+  ssl:
+    enabled: false
+  error:
+    whitelabel:
+      enabled: false
+###################### spring设置 ###########################
+spring:
+  application:
+    name: hydra-transfer-job-executor
+    ###################### consul ###########################
+  cloud:
+    consul:
+      host: agent
+      port: 8500
+      discovery:
+        healthCheckUrl: http://localhost:${server.port}/health
+        healthCheckInterval: 5s
+        prefer-ip-address: true
+        instance-id: ${spring.application.name}:${server.port}:${random.value}
+        hostname: agent
+        enabled: true
+        heartbeat:
+          enabled: true
+    service-registry:
+      auto-registration:
+        enabled: true
+###################### apollo ###########################
+app:
+  id: ${spring.application.name}
+apollo:
+  meta: http://192.168.20.51:8080
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+    namespaces: application,test.public.conf # application,dev.public.conf  #开发环境配置  application,test.public.conf #测试环境配置
